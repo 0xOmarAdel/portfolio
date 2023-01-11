@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
         .email("Invalid email address.")
         .required("Email is required."),
       message: Yup.string()
-        .min(50, "Message must be 50 at least characters.")
+        .min(20, "Message must be 20 at least characters.")
         .required("Message is required."),
     }),
     onSubmit: async () => {
