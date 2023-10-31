@@ -26,12 +26,12 @@ const Navbar = () => {
                 <a href={`#${navLink.id}`} className="relative z-10">
                   {navLink.text}
                 </a>
-                {navLink === activeLink ? (
+                {navLink === activeLink && (
                   <motion.div
                     className="absolute inset-0 w-full h-full bg-violet-900"
                     layoutId="nav-links"
                   />
-                ) : null}
+                )}
               </li>
             ))}
           </ul>
