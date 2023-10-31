@@ -20,10 +20,13 @@ const Navbar = () => {
             {navLinks.map((navLink) => (
               <li
                 key={navLink.id}
-                className="relative py-2 px-6 first-of-type:pl-8 last-of-type:pr-8"
+                className="relative"
                 onClick={() => setActiveLink(navLink)}
               >
-                <a href={`#${navLink.id}`} className="relative z-10">
+                <a
+                  href={`#${navLink.id}`}
+                  className="relative z-10 block py-2 px-6 first-of-type:pl-8 last-of-type:pr-8"
+                >
                   {navLink.text}
                 </a>
                 {navLink === activeLink && (
