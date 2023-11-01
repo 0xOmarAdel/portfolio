@@ -2,15 +2,9 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import myPic from "../assets/myPic.png";
 import { aboutTabs } from "../data/aboutTabs";
-import GitHubCalendar from "react-github-calendar";
 
 const About = () => {
   const [selectedTab, setSelectedTab] = useState(aboutTabs[0]);
-
-  const x = (xx) => {
-    setSelectedTab(xx);
-    console.log(xx);
-  };
 
   return (
     <section
@@ -33,7 +27,7 @@ const About = () => {
                   className={`relative cursor-pointer transition duration-500 ${
                     navLink === selectedTab ? "opacity-100" : "opacity-70"
                   }`}
-                  onClick={() => x(navLink)}
+                  onClick={() => setSelectedTab(navLink)}
                 >
                   <span className="relative z-10 block">{navLink.text}</span>
 
