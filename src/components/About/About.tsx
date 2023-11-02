@@ -24,16 +24,16 @@ const About = () => {
                   className={`relative h-fit cursor-pointer transition duration-500 ${
                     navLink === selectedTab ? "opacity-100" : "opacity-70"
                   }`}
-                  onClick={() => setSelectedTab(navLink)}
                 >
-                  <span className="relative z-10 block">{navLink.text}</span>
-
-                  {navLink === selectedTab && (
-                    <motion.div
-                      className="absolute -bottom-1.5 w-1/2 h-1 bg-gradient-to-r from-violet-500 to-purple-800 rounded-tr-sm rounded-br-sm"
-                      layoutId="about-links"
-                    />
-                  )}
+                  <button onClick={() => setSelectedTab(navLink)}>
+                    <span className="relative z-10 block">{navLink.text}</span>
+                    {navLink === selectedTab && (
+                      <motion.div
+                        className="absolute -bottom-1.5 w-1/2 h-1 bg-gradient-to-r from-violet-500 to-purple-800 rounded-tr-sm rounded-br-sm"
+                        layoutId="about-links"
+                      />
+                    )}
+                  </button>
                 </li>
               ))}
             </ul>
