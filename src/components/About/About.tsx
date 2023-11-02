@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { aboutTabs } from "../data/aboutTabs";
+import { aboutTabs } from "../../data/aboutTabs";
 import AboutImage from "./AboutImage";
 
 const About = () => {

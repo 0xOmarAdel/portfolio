@@ -1,4 +1,4 @@
-import myPic from "../assets/myPic.png";
+import myPic from "../../assets/myPic.png";
 
 const AboutImage = () => {
   return (
@@ -17,7 +17,7 @@ const AboutImage = () => {
         y="0"
         width="100%"
         height="100%"
-        clip-path="url(#shape)"
+        clipPath="url(#shape)"
         href={myPic}
         preserveAspectRatio="none"
       ></image>{" "}
