@@ -2,21 +2,18 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { aboutTabs } from "../../data/aboutTabs";
 import AboutImage from "./AboutImage";
+import Section from "../../ui/Section";
+import SectionHeading from "../../ui/SectionHeading";
 
 const About = () => {
   const [selectedTab, setSelectedTab] = useState(aboutTabs[0]);
 
   return (
-    <section
+    <Section
       id="about"
-      className="px-32 py-20 flex flex-col items-center justify-center gap-10"
+      className="flex flex-col items-center justify-center gap-10"
     >
-      <div className="text-5xl text-white font-bold text-center">
-        About{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-800">
-          Me
-        </span>
-      </div>
+      <SectionHeading text="About" gradient="Me" />
       <div className="w-full grid grid-cols-7 gap-14">
         <div className="col-span-5 flex flex-col gap-10">
           <nav>
@@ -55,7 +52,7 @@ const About = () => {
         </div>
         <AboutImage />
       </div>
-    </section>
+    </Section>
   );
 };
 
