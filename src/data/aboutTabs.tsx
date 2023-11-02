@@ -1,6 +1,6 @@
 import AboutOverview from "../components/AboutOverview";
-import AboutEducation from "../components/AboutEducation";
-import AboutGitHubStats from "../components/AboutGitHubStats";
+import AboutEducation from "../components/About/AboutEducation";
+import AboutGitHubStats from "../components/About/AboutGitHubStats";
 
 export const aboutTabs = [
   { id: 1, text: "Overview", component: <AboutOverview /> },
