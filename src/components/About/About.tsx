@@ -14,14 +14,14 @@ const About = () => {
       className="flex flex-col items-center justify-center gap-10"
     >
       <SectionHeading text="About" gradient="Me" />
-      <div className="w-full grid grid-cols-7 gap-14">
-        <div className="col-span-5 flex flex-col gap-10">
+      <div className="w-full flex flex-col lg:flex-row gap-14">
+        <div className="order-2 lg:order-1 flex flex-col gap-10">
           <nav>
             <ul className="mr-[15px] flex flex-row gap-8 text-2xl text-gray-300 font-semibold">
               {aboutTabs.map((navLink) => (
                 <li
                   key={navLink.id}
-                  className={`relative cursor-pointer transition duration-500 ${
+                  className={`relative h-fit cursor-pointer transition duration-500 ${
                     navLink === selectedTab ? "opacity-100" : "opacity-70"
                   }`}
                   onClick={() => setSelectedTab(navLink)}
@@ -45,6 +45,7 @@ const About = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.2 }}
+              className="grow-0"
             >
               {selectedTab.component}
             </motion.div>

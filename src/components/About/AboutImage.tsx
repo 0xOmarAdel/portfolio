@@ -3,11 +3,11 @@ import myPic from "../../assets/myPic.png";
 const AboutImage = () => {
   return (
     <svg
-      className="col-span-2"
+      className="order-1 lg:order-2 shrink-0 self-center"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
-      width="100%"
+      width="300"
       id="blobSvg"
       filter="blur(0px)"
       transform="rotate(0)"
