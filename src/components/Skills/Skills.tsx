@@ -1,6 +1,6 @@
 import SkillsText from "./SkillsText";
 import SingleSkill from "./SingleSkill";
-import { skills } from "../data/skills";
+import { skills } from "../../data/skills";
 
 const Skills = () => {
   return (
