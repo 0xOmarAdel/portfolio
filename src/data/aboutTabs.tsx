@@ -1,4 +1,4 @@
-import AboutOverview from "../components/AboutOverview";
+import AboutOverview from "../components/About/AboutOverview";
 import AboutEducation from "../components/About/AboutEducation";
 import AboutGitHubStats from "../components/About/AboutGitHubStats";
 
