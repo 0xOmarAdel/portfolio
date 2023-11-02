@@ -3,7 +3,7 @@ const SkillsText = () => {
     <div className="flex flex-col items-center justify-center gap-6">
       <div className="text-5xl text-white font-bold text-center">
         Professional{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-700">
           Skillset
         </span>
       </div>
