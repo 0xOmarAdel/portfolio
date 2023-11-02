@@ -1,4 +1,9 @@
-const SectionHeading = ({ text, gradient }) => {
+type Props = {
+  text: string;
+  gradient: string;
+};
+
+const SectionHeading: React.FC<Props> = ({ text, gradient }) => {
   return (
     <div className="text-5xl text-white font-bold text-center">
       {text}{" "}
