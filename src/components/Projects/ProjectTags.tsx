@@ -1,4 +1,8 @@
-const ProjectTags = ({ tags }) => {
+type Props = {
+  tags: string[];
+};
+
+const ProjectTags: React.FC<Props> = ({ tags }) => {
   return (
     <div className="mt-3 flex flex-row flex-wrap gap-1.5">
       {tags.map((tag) => (

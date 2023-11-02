@@ -3,7 +3,18 @@ import ProjectDescription from "./ProjectDescription";
 import ProjectTags from "./ProjectTags";
 import ProjectTitle from "./ProjectTitle";
 
-const ProjectsItem = (props) => {
+type Props = {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  tags: string[];
+  collaborators?: { username: string; image: string }[];
+  link: string;
+  github: string;
+};
+
+const ProjectsItem: React.FC<Props> = (props) => {
   return (
     <div className="glass flex flex-col overflow-hidden">
       <div className="image-container">

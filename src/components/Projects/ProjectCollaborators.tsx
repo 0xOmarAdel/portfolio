@@ -1,6 +1,10 @@
 import { GoPeople } from "react-icons/go";
 
-const ProjectCollaborators = ({ collaborators }) => {
+type Props = {
+  collaborators: { username: string; image: string }[];
+};
+
+const ProjectCollaborators: React.FC<Props> = ({ collaborators }) => {
   return (
     <div className="mt-1 flex flex-row items-center gap-3">
       <GoPeople className="text-lg" />

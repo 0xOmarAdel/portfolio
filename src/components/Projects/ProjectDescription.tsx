@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-const ProjectDescription = ({ description }) => {
+type Props = {
+  description: string;
+};
+
+const ProjectDescription: React.FC<Props> = ({ description }) => {
   const max = 150;
   const [textSliced, setTextSliced] = useState(description?.length > max);
 
