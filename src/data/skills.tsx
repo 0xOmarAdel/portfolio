@@ -16,6 +16,8 @@ import {
   SiEslint,
   SiDaisyui,
   SiMysql,
+  SiReactquery,
+  SiChakraui,
 } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 import { PiFramerLogo } from "react-icons/pi";
@@ -50,6 +52,10 @@ export const skills = [
     icon: <SiRedux />,
   },
   {
+    id: 7,
+    icon: <SiReactquery />,
+  },
+  {
     id: 8,
     icon: <BsBootstrap />,
   },
@@ -64,6 +70,10 @@ export const skills = [
   {
     id: 11,
     icon: <SiDaisyui className="scale-[1.5]" />,
+  },
+  {
+    id: 11,
+    icon: <SiChakraui />,
   },
   {
     id: 12,
