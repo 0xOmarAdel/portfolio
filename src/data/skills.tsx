@@ -52,51 +52,51 @@ export const skills = [
     icon: <SiRedux />,
   },
   {
-    id: 7,
+    id: 8,
     icon: <SiReactquery />,
   },
   {
-    id: 8,
+    id: 9,
     icon: <BsBootstrap />,
   },
   {
-    id: 9,
+    id: 10,
     icon: <SiJest />,
   },
   {
-    id: 10,
+    id: 11,
     icon: <SiEslint />,
   },
   {
-    id: 11,
+    id: 12,
     icon: <SiDaisyui className="scale-[1.5]" />,
   },
   {
-    id: 11,
+    id: 13,
     icon: <SiChakraui />,
   },
   {
-    id: 12,
+    id: 14,
     icon: <FaPhp className="scale-125" />,
   },
   {
-    id: 13,
+    id: 15,
     icon: <SiMysql className="scale-[1.4]" />,
   },
   {
-    id: 14,
+    id: 16,
     icon: <PiFramerLogo />,
   },
   {
-    id: 15,
+    id: 17,
     icon: <FaGitAlt />,
   },
   {
-    id: 16,
+    id: 18,
     icon: <FaGithub />,
   },
   {
-    id: 17,
+    id: 19,
     icon: <FaNpm className="scale-125" />,
   },
 ];
