@@ -1,3 +1,6 @@
+import Lottie from "lottie-react";
+import downloadAnimation from "../../assets/downloadAnimation.json";
+
 const AboutOverview = () => {
   return (
     <>
@@ -11,8 +14,9 @@ const AboutOverview = () => {
       </p>
       <button
         type="submit"
-        className="w-fit mt-5 py-2 px-10 bg-violet-800 rounded-sm text-lg text-gray-200 font-semibold transition duration-200 hover:bg-violet-900 hover:text-white active:scale-95"
+        className="w-fit mt-5 py-2 px-10 flex flex-row items-center gap-1 border border-violet-800 rounded-sm text-lg text-gray-200 font-semibold transition duration-200 hover:bg-violet-800 hover:text-white active:scale-95"
       >
+        <Lottie animationData={downloadAnimation} style={{width: "20px"}} />
         Download CV
       </button>
     </>
