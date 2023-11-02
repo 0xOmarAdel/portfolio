@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
-import FormError from "./FormError";
+import FormError from "../FormError";
 
 const ContactForm = () => {
   const [submissionState, setSubmissionState] = useState<
@@ -49,7 +49,7 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="glass order-2 lg:order-1 z-50 h-fit px-10 py-12 flex flex-col gap-6 text-white">
+    <div className="glass shadow order-2 lg:order-1 z-50 h-fit px-10 py-12 flex flex-col gap-6 text-white">
       <h2 className="text-3xl text-gray-300 font-semibold tracking-tight">
         Contact Me
       </h2>

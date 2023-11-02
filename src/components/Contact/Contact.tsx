@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
-import mail from "../assets/mail.svg";
-import contactAnimation from "../assets/contactAnimation2.json";
+import mail from "../../assets/mail.svg";
+import contactAnimation from "../../assets/contactAnimation2.json";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
