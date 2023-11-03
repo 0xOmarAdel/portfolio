@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 import downloadAnimation from "../../assets/downloadAnimation.json";
-import portfolio from "../../assets/Omar_Adel_Portfolio.pdf";
+import portfolio from "../../assets/Omar_Adel_Resume.pdf";
 
 const AboutOverview = () => {
   return (
@@ -21,7 +21,7 @@ const AboutOverview = () => {
         className="w-fit mt-5 py-2 px-10 flex flex-row items-center gap-1 border border-violet-800 rounded-sm text-lg text-gray-200 font-semibold transition duration-200 hover:bg-violet-800 hover:text-white"
       >
         <Lottie animationData={downloadAnimation} style={{ width: "20px" }} />
-        Download CV
+        Download Resume
       </motion.a>
     </>
   );
