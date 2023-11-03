@@ -6,8 +6,7 @@ import ContactImage from "./ContactImage";
 
 const Contact = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.2,
+    triggerOnce: true,
   });
 
   return (

@@ -19,7 +19,7 @@ type Props = {
 
 const ProjectsItem: React.FC<Props> = (props) => {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   return (
