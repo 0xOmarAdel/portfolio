@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { socials } from "../data/socials";
 import { navLinks } from "../data/navLinks";
 
@@ -62,17 +62,12 @@ const Navbar = () => {
                   >
                     {navLink.text}
                   </a>
-                  <AnimatePresence mode="wait">
                     {navLink.id === activeSection && (
                       <motion.div
                         className="absolute inset-0 w-full h-full bg-violet-900"
                         layoutId="nav-links"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
                       />
                     )}
-                  </AnimatePresence>
                 </button>
               </li>
             ))}
