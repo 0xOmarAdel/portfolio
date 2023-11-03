@@ -1,14 +1,14 @@
-import { forwardRef, ForwardedRef } from "react";
+import React, { forwardRef } from "react";
 import { twMerge } from "tailwind-merge";
 
 type Props = {
   id: string;
-  className: string;
+  className?: string;
   children: React.ReactNode;
 };
 
-const Section: React.ForwardRefExoticComponent<Props> = forwardRef(
-  ({ id, className, children }: Props, ref: ForwardedRef<HTMLElement>) => {
+const Section = forwardRef<HTMLElement, Props>(
+  ({ id, className, children }, ref) => {
     return (
       <section
         id={id}
