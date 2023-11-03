@@ -1,8 +1,19 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { opacityVariants } from "../../utils/motion";
 import myPic from "../../assets/myPic.png";
 
 const AboutImage = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <svg
+    <motion.svg
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={opacityVariants(1)}
+      ref={ref}
       className="order-1 lg:order-2 shrink-0 self-center"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +50,7 @@ const AboutImage = () => {
           ></animate>{" "}
         </path>
       </clipPath>
-    </svg>
+    </motion.svg>
   );
 };
 
