@@ -5,6 +5,8 @@ import ProjectDescription from "./ProjectDescription";
 import ProjectTags from "./ProjectTags";
 import ProjectTitle from "./ProjectTitle";
 import { slideInFromBottomVariants } from "../../utils/motion";
+import { FaGithub } from "react-icons/fa6";
+import { RiExternalLinkLine } from "react-icons/ri";
 
 type Props = {
   id: number;
@@ -30,8 +32,16 @@ const ProjectsItem: React.FC<Props> = (props) => {
       ref={ref}
       className="glass flex flex-col overflow-hidden"
     >
-      <div className="image-container">
-        <img src={props.image} alt="Your" className="scrolling-image" />
+      <div className="image-container relative">
+        <img src={props.image} alt={props.title} className="scrolling-image" />
+        <div className="absolute top-1/2 right-0 pl-2 pr-1 py-1.5 bg-gradient-to-r from-violet-500 to-violet-900 rounded-tl-xl rounded-bl-xl flex flex-col gap-2 text-xl -translate-y-1/2">
+          <a href={props.github} target="_blank" className="transition duration-500 hover:scale-110">
+            <FaGithub />
+          </a>
+          <a href={props.link} target="_blank" className="transition duration-500 hover:scale-110">
+            <RiExternalLinkLine />
+          </a>
+        </div>
       </div>
       <div className="px-5 py-5 flex flex-col">
         <ProjectTitle title={props.title} />
