@@ -55,7 +55,6 @@ const Navbar = () => {
           <ul className="mr-[15px] flex items-center justify-between bg-[#0300145e] border border-violet-900 rounded-full text-gray-200 overflow-hidden">
             {navLinks.map((navLink) => (
               <li key={navLink.id} className="relative">
-                <button onClick={() => setActiveSection(navLink.id)}>
                   <a
                     href={`#${navLink.id}`}
                     className="relative z-10 block py-2 px-6 first-of-type:pl-8 last-of-type:pr-8"
@@ -68,7 +67,6 @@ const Navbar = () => {
                         layoutId="nav-links"
                       />
                     )}
-                </button>
               </li>
             ))}
           </ul>
