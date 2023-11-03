@@ -1,7 +1,10 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import ProjectCollaborators from "./ProjectCollaborators";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTags from "./ProjectTags";
 import ProjectTitle from "./ProjectTitle";
+import { slideInFromBottomVariants } from "../../utils/motion";
 
 type Props = {
   id: number;
@@ -15,8 +18,18 @@ type Props = {
 };
 
 const ProjectsItem: React.FC<Props> = (props) => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+  });
+
   return (
-    <div className="glass flex flex-col overflow-hidden">
+    <motion.div
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={slideInFromBottomVariants(50, 0.5, 0.25 * props.id)}
+      ref={ref}
+      className="glass flex flex-col overflow-hidden"
+    >
       <div className="image-container">
         <img src={props.image} alt="Your" className="scrolling-image" />
       </div>
@@ -29,7 +42,7 @@ const ProjectsItem: React.FC<Props> = (props) => {
         <ProjectTags tags={props.tags} />
         <ProjectDescription description={props.description} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
