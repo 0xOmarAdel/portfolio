@@ -1,3 +1,4 @@
+import { forwardRef, ForwardedRef } from "react";
 import { twMerge } from "tailwind-merge";
 
 type Props = {
@@ -6,18 +7,21 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Section: React.FC<Props> = ({ id, className, children }) => {
-  return (
-    <section
-      id={id}
-      className={twMerge(
-        "px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-24",
-        className
-      )}
-    >
-      {children}
-    </section>
-  );
-};
+const Section: React.ForwardRefExoticComponent<Props> = forwardRef(
+  ({ id, className, children }: Props, ref: ForwardedRef<HTMLElement>) => {
+    return (
+      <section
+        id={id}
+        className={twMerge(
+          "px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-24",
+          className
+        )}
+        ref={ref}
+      >
+        {children}
+      </section>
+    );
+  }
+);
 
 export default Section;
