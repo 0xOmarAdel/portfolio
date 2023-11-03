@@ -1,4 +1,5 @@
 import Lottie from "lottie-react";
+import { motion } from "framer-motion";
 import downloadAnimation from "../../assets/downloadAnimation.json";
 import portfolio from "../../assets/Omar_Adel_Portfolio.pdf";
 
@@ -13,14 +14,15 @@ const AboutOverview = () => {
         learning and staying up-to-date with the latest trends. Collaborative
         team player committed to delivering high-quality projects.
       </p>
-      <a
+      <motion.a
+        whileTap={{ scale: 0.95 }}
         href={portfolio}
         download
-        className="w-fit mt-5 py-2 px-10 flex flex-row items-center gap-1 border border-violet-800 rounded-sm text-lg text-gray-200 font-semibold transition duration-200 hover:bg-violet-800 hover:text-white active:scale-95"
+        className="w-fit mt-5 py-2 px-10 flex flex-row items-center gap-1 border border-violet-800 rounded-sm text-lg text-gray-200 font-semibold transition duration-200 hover:bg-violet-800 hover:text-white"
       >
         <Lottie animationData={downloadAnimation} style={{ width: "20px" }} />
         Download CV
-      </a>
+      </motion.a>
     </>
   );
 };
