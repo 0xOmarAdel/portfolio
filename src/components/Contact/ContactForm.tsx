@@ -2,9 +2,15 @@ import { useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import FormError from "./ContactFormError";
+import { opacityVariants, slideInFromBottomVariants } from "../../utils/motion";
 
-const ContactForm = () => {
+type Props = {
+  inView: boolean;
+};
+
+const ContactForm: React.FC<Props> = ({ inView }) => {
   const [submissionState, setSubmissionState] = useState<
     "success" | "error" | null
   >();
@@ -49,7 +55,12 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="glass shadow order-2 lg:order-1 z-50 h-fit px-10 py-12 flex flex-col gap-6 text-white">
+    <motion.div
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={slideInFromBottomVariants(50)}
+      className="glass shadow order-2 lg:order-1 z-50 h-fit px-10 py-12 flex flex-col gap-6 text-white"
+    >
       <h2 className="text-3xl text-gray-300 font-semibold tracking-tight">
         Contact Me
       </h2>
@@ -60,7 +71,10 @@ const ContactForm = () => {
       >
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-8">
-            <input
+            <motion.input
+              variants={opacityVariants(0.5, 0.5)}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
               id="firstName"
               name="firstName"
               placeholder="First Name"
@@ -69,7 +83,10 @@ const ContactForm = () => {
               onBlur={formik.handleBlur}
               value={formik.values.firstName}
             />
-            <input
+            <motion.input
+              variants={opacityVariants(0.5, 0.75)}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
               id="lastName"
               name="lastName"
               placeholder="Last Name"
@@ -87,7 +104,10 @@ const ContactForm = () => {
           )}
         </div>
         <div className="flex flex-col gap-2">
-          <input
+          <motion.input
+            variants={opacityVariants(0.5, 1)}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
             id="email"
             name="email"
             placeholder="Email"
@@ -102,7 +122,10 @@ const ContactForm = () => {
           )}
         </div>
         <div className="flex flex-col gap-2">
-          <textarea
+          <motion.textarea
+            variants={opacityVariants(0.5, 1.25)}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
             id="message"
             name="message"
             placeholder="Message.."
@@ -115,19 +138,22 @@ const ContactForm = () => {
             <FormError error={formik.errors.message} />
           )}
         </div>
-        <button
+        <motion.button
+          variants={slideInFromBottomVariants(30, 0.5, 1.5)}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
           type="submit"
           className="mt-3 py-2 bg-violet-800 rounded-sm text-lg text-gray-200 font-semibold transition duration-200 hover:bg-violet-900 hover:text-white active:scale-95"
         >
           Submit
-        </button>
+        </motion.button>
       </form>
       {submissionState === "success"
         ? "Your message has been sent successfully"
         : submissionState === "error"
         ? "An error occurred."
         : ""}
-    </div>
+    </motion.div>
   );
 };
 
