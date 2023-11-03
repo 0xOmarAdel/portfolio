@@ -45,7 +45,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 z-50 w-full px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-4 bg-[#03001417] shadow-lg shadow-[#2A0E61]/50 backdrop-blur-md">
+    <div className="fixed top-0 z-50 w-full px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-4 bg-[#03001417] shadow-lg shadow-[#2A0E61]/20 backdrop-blur-md">
       <div className="w-full h-full m-auto flex flex-row items-center justify-between">
         <a href="#home" className="h-auto w-auto flex flex-row items-center">
           <span className="text-3xl text-gray-300 font-bold">Omar Adel</span>
