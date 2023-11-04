@@ -4,11 +4,11 @@ export const socials = [
   {
     title: "github",
     icon: FaGithub,
-    path: "",
+    path: "https://github.com/0xOmarAdel",
   },
   {
     title: "linkedIn",
     icon: FaLinkedinIn,
-    path: "",
+    path: "https://www.linkedin.com/in/omaradel02",
   },
 ];
