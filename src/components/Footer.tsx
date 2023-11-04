@@ -1,7 +1,9 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="pb-5 flex flex-row justify-center text-lg">
-      Copyright © 2023 Omar Adel
+      Copyright © {currentYear} Omar Adel
     </div>
   );
 };
