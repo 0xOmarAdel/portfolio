@@ -5,12 +5,13 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import FormError from "./ContactFormError";
 import { opacityVariants, slideInFromBottomVariants } from "../../utils/motion";
+import { useInView } from "react-intersection-observer";
 
-type Props = {
-  inView: boolean;
-};
+const ContactForm: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
 
-const ContactForm: React.FC<Props> = ({ inView }) => {
   const [submissionState, setSubmissionState] = useState<
     "success" | "error" | null
   >();
@@ -60,6 +61,7 @@ const ContactForm: React.FC<Props> = ({ inView }) => {
       animate={inView ? "visible" : "hidden"}
       variants={slideInFromBottomVariants(50)}
       className="glass shadow order-2 lg:order-1 h-fit px-10 py-12 flex flex-col gap-6 text-white"
+      ref={ref}
     >
       <h2 className="text-3xl text-gray-300 font-semibold tracking-tight">
         Contact Me

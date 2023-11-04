@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import mail from "../../assets/mail.svg";
 import { slideInFromBottomVariants } from "../../utils/motion";
+import { useInView } from "react-intersection-observer";
 
-type Props = {
-  inView: boolean;
-};
+const ContactImage: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
 
-const ContactImage: React.FC<Props> = ({ inView }) => {
   return (
     <motion.img
       initial="hidden"
@@ -15,6 +16,7 @@ const ContactImage: React.FC<Props> = ({ inView }) => {
       src={mail}
       alt=""
       className="order-1 lg:order-2"
+      ref={ref}
     />
   );
 };
