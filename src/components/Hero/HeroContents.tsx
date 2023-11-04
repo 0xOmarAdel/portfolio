@@ -31,7 +31,7 @@ const HeroContent = () => {
           className="text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           I'M{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-800">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-700">
             OMAR ADEL
           </span>
         </motion.div>
