@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1f1b31];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-violet-900;
+}
+
 body {
   @apply bg-[#040018] text-gray-300 overflow-y-auto overflow-x-hidden;
 }
