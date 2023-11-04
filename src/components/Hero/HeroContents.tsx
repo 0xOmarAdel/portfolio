@@ -9,6 +9,7 @@ import {
 import mainIconsDark from "../../assets/mainIconsDark.svg";
 import waveAnimation from "../../assets/waveAnimation.json";
 import arrowAnimation from "../../assets/arrowAnimation.json";
+import { name, heroText } from "../../data/text";
 
 const HeroContent = () => {
   return (
@@ -31,8 +32,8 @@ const HeroContent = () => {
           className="text-6xl font-bold text-gray-100 max-w-[600px] w-auto h-auto"
         >
           I'M{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-700">
-            OMAR ADEL
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-700 uppercase">
+            {name}
           </span>
         </motion.div>
 
@@ -40,9 +41,7 @@ const HeroContent = () => {
           variants={slideInFromLeftVariants(100, 0.5, 0.8)}
           className="max-w-2xl my-6 text-xl text-gray-400 leading-8"
         >
-          Experienced Front-End Web Developer specializing in React.js, adept
-          with popular UI frameworks/libraries, committed to crafting dynamic
-          and user-centric web experiences.
+          {heroText}
         </motion.p>
         <motion.div className="relative w-fit">
           <motion.a

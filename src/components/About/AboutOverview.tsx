@@ -2,17 +2,13 @@ import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 import downloadAnimation from "../../assets/downloadAnimation.json";
 import portfolio from "../../assets/Omar_Adel_Resume.pdf";
+import { aboutText } from "../../data/text";
 
 const AboutOverview = () => {
   return (
     <>
       <p className="text-xl text-gray-300 leading-8 tracking-wide">
-        Experienced front-end web developer skilled in HTML, CSS, Bootstrap,
-        Tailwind CSS, JavaScript, TypeScript, React, and Redux Toolkit.
-        Passionate about creating visually appealing, user-friendly websites.
-        Strong problem-solving abilities and a keen eye for design. Constantly
-        learning and staying up-to-date with the latest trends. Collaborative
-        team player committed to delivering high-quality projects.
+        {aboutText}
       </p>
       <motion.a
         whileTap={{ scale: 0.95 }}
