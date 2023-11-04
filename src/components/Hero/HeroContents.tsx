@@ -17,18 +17,18 @@ const HeroContent = () => {
       animate="visible"
       className="w-full mt-40 flex flex-row items-center justify-center z-20"
     >
-      <div className="h-full w-full flex flex-col justify-cente">
+      <div className="h-full w-full flex flex-col">
         <motion.div
           variants={slideInFromTopVariants(100, 0.5, 0.2)}
           className="-ml-8 flex flex-row items-center"
         >
           <Lottie animationData={waveAnimation} style={{ width: "120px" }} />
-          <h1 className="text-6xl font-bold">Hey there!</h1>
+          <h1 className="text-6xl text-gray-100 font-bold">Hey there!</h1>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeftVariants(100, 0.5, 0.5)}
-          className="text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="text-6xl font-bold text-gray-100 max-w-[600px] w-auto h-auto"
         >
           I'M{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-700">
