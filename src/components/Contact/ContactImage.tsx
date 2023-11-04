@@ -14,7 +14,7 @@ const ContactImage: React.FC<Props> = ({ inView }) => {
       variants={slideInFromBottomVariants(50, 0.5, 0.5)}
       src={mail}
       alt=""
-      className="order-1 lg:order-2 z-50"
+      className="order-1 lg:order-2"
     />
   );
 };

@@ -59,7 +59,7 @@ const ContactForm: React.FC<Props> = ({ inView }) => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={slideInFromBottomVariants(50)}
-      className="glass shadow order-2 lg:order-1 z-50 h-fit px-10 py-12 flex flex-col gap-6 text-white"
+      className="glass shadow order-2 lg:order-1 h-fit px-10 py-12 flex flex-col gap-6 text-white"
     >
       <h2 className="text-3xl text-gray-300 font-semibold tracking-tight">
         Contact Me
