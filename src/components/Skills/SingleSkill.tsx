@@ -25,7 +25,7 @@ const SingleSkill = ({ icon: Icon, index }: Props) => {
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
-      className="h-full px-24 py-9 border border-violet-600 rounded-md text-5xl text-white"
+      className="h-full px-24 py-9 border border-violet-700 border-opacity-60 rounded-md text-5xl text-white"
     >
       {Icon}
     </motion.div>

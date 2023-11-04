@@ -7,7 +7,7 @@ const SectionHeading: React.FC<Props> = ({ text, gradient }) => {
   return (
     <div className="text-5xl text-white font-bold text-center">
       {text}{" "}
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-700">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-800">
         {gradient}
       </span>
     </div>

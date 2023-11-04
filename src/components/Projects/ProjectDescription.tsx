@@ -17,7 +17,7 @@ const ProjectDescription: React.FC<Props> = ({ description }) => {
       {textSliced ? description?.slice(0, max - 3) + "... " : description}
       {textSliced && (
         <button
-          className="description-sm description-gray-500 font-bold whitespace-nowrap cursor-pointer transition duration-500 hover:text-violet-500"
+          className="description-sm description-gray-500 font-bold whitespace-nowrap cursor-pointer transition duration-500 hover:text-violet-400"
           onClick={readMore}
         >
           Read more

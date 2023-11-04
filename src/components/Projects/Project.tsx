@@ -34,11 +34,19 @@ const ProjectsItem: React.FC<Props> = (props) => {
     >
       <div className="image-container relative">
         <img src={props.image} alt={props.title} className="scrolling-image" />
-        <div className="absolute top-1/2 right-0 pl-2 pr-1 py-1.5 bg-gradient-to-r from-violet-500 to-violet-900 rounded-tl-xl rounded-bl-xl flex flex-col gap-2 text-xl -translate-y-1/2">
-          <a href={props.github} target="_blank" className="transition duration-500 hover:scale-110">
+        <div className="absolute top-1/2 right-0 pl-2 pr-1 py-1.5 bg-[#1f1147] rounded-tl-xl rounded-bl-xl flex flex-col gap-2 text-xl text-gray-400 -translate-y-1/2">
+          <a
+            href={props.github}
+            target="_blank"
+            className="transition duration-500 hover:text-gray-300"
+          >
             <FaGithub />
           </a>
-          <a href={props.link} target="_blank" className="transition duration-500 hover:scale-110">
+          <a
+            href={props.link}
+            target="_blank"
+            className="transition duration-500 hover:text-gray-300"
+          >
             <RiExternalLinkLine />
           </a>
         </div>

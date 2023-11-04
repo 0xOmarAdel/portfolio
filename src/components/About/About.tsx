@@ -29,7 +29,7 @@ const About = () => {
                     <span className="relative z-10 block">{navLink.text}</span>
                     {navLink === selectedTab && (
                       <motion.div
-                        className="absolute -bottom-1.5 w-1/2 h-1 bg-gradient-to-r from-violet-500 to-purple-800 rounded-tr-sm rounded-br-sm"
+                        className="absolute -bottom-1.5 w-1/2 h-1 bg-gradient-to-r from-violet-400 to-violet-800 rounded-tr-sm rounded-br-sm"
                         layoutId="about-links"
                       />
                     )}
