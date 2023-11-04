@@ -9,7 +9,7 @@ const AboutGitHubStats = () => {
       fontSize={16}
       colorScheme="dark"
       theme={{
-        dark: ["#383838", "#b8a2f8", "#A78BFA", "#8B5CF6", "#7C3AED"],
+        dark: ["#2a2a2a", "#a98ada", "#916bd0", "#7a4bc6", "#622bbc"],
       }}
     />
   );
