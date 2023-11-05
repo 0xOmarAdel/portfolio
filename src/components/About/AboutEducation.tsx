@@ -3,7 +3,7 @@ import { education } from "../../data/text";
 
 const AboutEducation = () => {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row justify-center xl:justify-start gap-4">
       <div className="relative">
         <div className="h-fit p-2 rounded-md bg-gradient-to-r from-violet-400 to-violet-700 translate-y-2">
           <FaGraduationCap className="text-lg md:text-xl" />

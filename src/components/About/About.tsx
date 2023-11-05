@@ -14,10 +14,10 @@ const About = () => {
       className="flex flex-col items-center justify-center gap-10"
     >
       <SectionHeading text="About" gradient="Me" />
-      <div className="w-full flex flex-col xl:flex-row justify-between gap-12">
-        <div className="order-2 xl:order-1 flex flex-col gap-10">
+      <div className="w-full flex flex-col xl:flex-row justify-between gap-9 xl:gap-12">
+        <div className="order-2 xl:order-1 flex flex-col gap-6 xl:gap-10">
           <nav>
-            <ul className="mr-[15px] flex flex-row gap-8 text-lg md:text-xl lg:text-2xl text-gray-300 font-semibold">
+            <ul className="mr-[15px] flex flex-row justify-center xl:justify-start gap-8 text-xl sm:text-2xl text-gray-300 font-semibold">
               {aboutTabs.map((navLink) => (
                 <li
                   key={navLink.id}
