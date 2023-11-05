@@ -45,7 +45,7 @@ const About = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="grow-0"
+              className="grow-0 flex flex-col items-center xl:items-start"
             >
               {selectedTab.component}
             </motion.div>

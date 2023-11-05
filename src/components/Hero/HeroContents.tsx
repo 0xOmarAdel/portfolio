@@ -10,6 +10,8 @@ import mainIconsDark from "../../assets/mainIconsDark.svg";
 import waveAnimation from "../../assets/waveAnimation.json";
 import arrowAnimation from "../../assets/arrowAnimation.json";
 import { name, heroText } from "../../data/text";
+import arrowDownAnimation from "../../assets/arrowDownAnimation.json";
+import Button from "../../ui/Button";
 
 const HeroContent = () => {
   return (
@@ -44,13 +46,12 @@ const HeroContent = () => {
           {heroText}
         </motion.p>
         <motion.div className="relative w-fit">
-          <motion.a
-            variants={slideInFromLeftVariants(100, 0.5, 1)}
+          <Button
+            text="Learn More"
             href="#about"
-            className="py-2 px-10 block button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-          >
-            Learn More!
-          </motion.a>
+            lottieAnimation={arrowDownAnimation}
+            lottieAnimationClasses="scale-[1.6]"
+          />
           <motion.div variants={opacityVariants(0.5, 1.3)}>
             <Lottie
               animationData={arrowAnimation}
