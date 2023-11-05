@@ -25,9 +25,11 @@ const SingleSkill = ({ icon: Icon, index }: Props) => {
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
-      className="h-full px-24 py-9 border border-violet-700 border-opacity-60 rounded-md text-5xl text-white"
+      className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
     >
-      {Icon}
+      <div className="mx-3 sm:mx-5 mb-6 sm:mb-10 py-9 flex flex-row justify-center border border-violet-700 border-opacity-60 rounded-md text-4xl sm:text-5xl text-white">
+        {Icon}
+      </div>
     </motion.div>
   );
 };

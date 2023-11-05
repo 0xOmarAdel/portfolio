@@ -11,11 +11,11 @@ const Skills = () => {
     >
       <div className="flex flex-col items-center justify-center gap-6">
         <SectionHeading text="Professional" gradient="Skillset" />
-        <div className="cursive text-2xl text-gray-200 text-center">
+        <div className="cursive text-xl sm:text-2xl text-gray-200 text-center">
           Making apps with modern technologies
         </div>
       </div>
-      <div className="flex flex-row flex-wrap items-center justify-center gap-10">
+      <div className="w-ful -mx-3 sm:-mx-5 flex flex-row flex-wrap items-center justify-center">
         {skills.map((image, index) => (
           <SingleSkill key={image.id} icon={image.icon} index={index} />
         ))}
