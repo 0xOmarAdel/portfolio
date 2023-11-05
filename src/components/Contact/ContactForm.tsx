@@ -27,17 +27,17 @@ const ContactForm: React.FC = () => {
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
-        .max(15, "First name must be 15 characters or less")
+        .max(15, "First name must be 15 characters or less.")
         .required("First name is required."),
       lastName: Yup.string()
-        .max(15, "Last name must be 15 characters or less")
+        .max(15, "Last name must be 15 characters or less.")
         .required("Last name is required."),
       email: Yup.string()
-        .email("Invalid email address")
+        .email("Invalid email address.")
         .required("Email is required."),
       message: Yup.string()
         .min(50, "Message must be 50 at least characters.")
-        .required("Message is required"),
+        .required("Message is required."),
     }),
     onSubmit: async () => {
       try {
