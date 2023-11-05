@@ -15,7 +15,7 @@ const About = () => {
     >
       <SectionHeading text="About" gradient="Me" />
       <div className="w-full flex flex-col xl:flex-row justify-between gap-9 xl:gap-12">
-        <div className="order-2 xl:order-1 flex flex-col gap-6 xl:gap-10">
+        <div className="order-2 xl:order-1 flex flex-col gap-6 xl:gap-8">
           <nav>
             <ul className="mr-[15px] flex flex-row justify-center xl:justify-start gap-8 text-xl sm:text-2xl text-gray-300 font-semibold">
               {aboutTabs.map((navLink) => (
