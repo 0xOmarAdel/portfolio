@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Spin as Hamburger } from "hamburger-react";
 import { socials } from "../data/socials";
 import { navLinks } from "../data/navLinks";
+import {name} from '../data/text';
 
 const Navbar = () => {
   const [menuIsOpened, setMenuIsOpened] = useState(false);
@@ -61,7 +62,7 @@ const Navbar = () => {
           className="shrink-0 relative z-[100] h-auto w-auto flex flex-row items-center"
           onClick={closeMenuHandler}
         >
-          <span className="text-3xl text-gray-300 font-bold">Omar Adel</span>
+          <span className="text-3xl text-gray-300 font-bold capitalize">{name}</span>
         </a>
 
         <div
