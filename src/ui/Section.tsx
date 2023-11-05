@@ -13,7 +13,7 @@ const Section = forwardRef<HTMLElement, Props>(
       <section
         id={id}
         className={twMerge(
-          "px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-24",
+          "px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 pt-24",
           className
         )}
         ref={ref}
