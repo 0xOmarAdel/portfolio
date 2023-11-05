@@ -54,7 +54,7 @@ html {
 }
 
 .input {
-  @apply w-full px-4 py-1.5 bg-transparent border border-violet-700 border-opacity-20 rounded-sm outline-none focus:border-violet-700 transition duration-300;
+  @apply h-fit w-full px-4 py-1.5 bg-transparent border border-violet-700 border-opacity-20 rounded-sm outline-none focus:border-violet-700 transition duration-300;
   border: 1px solid rgb(48 35 68 / 71%);
 }
 

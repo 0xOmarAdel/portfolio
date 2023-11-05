@@ -73,37 +73,41 @@ const ContactForm: React.FC = () => {
       >
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-8">
-            <motion.input
-              variants={opacityVariants(0.5, 0.5)}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              id="firstName"
-              name="firstName"
-              placeholder="First Name"
-              className="input"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.firstName}
-            />
-            <motion.input
-              variants={opacityVariants(0.5, 0.75)}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              id="lastName"
-              name="lastName"
-              placeholder="Last Name"
-              className="input"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.lastName}
-            />
+            <div className="flex flex-col gap-2">
+              <motion.input
+                variants={opacityVariants(0.5, 0.5)}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                className="input"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.firstName}
+              />
+              {formik.touched.firstName && formik.errors.firstName && (
+                <FormError error={formik.errors.firstName} />
+              )}
+            </div>
+            <div className="flex flex-col gap-2">
+              <motion.input
+                variants={opacityVariants(0.5, 0.75)}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                className="input"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.lastName}
+              />
+              {formik.touched.lastName && formik.errors.lastName && (
+                <FormError error={formik.errors.lastName} />
+              )}
+            </div>
           </div>
-          {formik.touched.firstName && formik.errors.firstName && (
-            <FormError error={formik.errors.firstName} />
-          )}
-          {formik.touched.lastName && formik.errors.lastName && (
-            <FormError error={formik.errors.lastName} />
-          )}
         </div>
         <div className="flex flex-col gap-2">
           <motion.input
@@ -131,7 +135,7 @@ const ContactForm: React.FC = () => {
             id="message"
             name="message"
             placeholder="Message.."
-            className="input h-[250px] resize-none"
+            className="input !h-[250px] resize-none"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
