@@ -7,7 +7,7 @@ import { aboutText } from "../../data/text";
 const AboutOverview = () => {
   return (
     <>
-      <p className="text-base md:text-lg lg:text-xl text-gray-300 text-center xl:text-start leading-8 tracking-wide">
+      <p className="text-base md:text-lg lg:text-xl text-gray-300 text-center xl:text-start !leading-8 tracking-wider">
         {aboutText}
       </p>
       <motion.a
