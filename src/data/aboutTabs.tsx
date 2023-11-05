@@ -5,5 +5,5 @@ import AboutGitHubStats from "../components/About/AboutGitHubStats";
 export const aboutTabs = [
   { id: 1, text: "Overview", component: <AboutOverview /> },
   { id: 2, text: "Education", component: <AboutEducation /> },
-  { id: 3, text: "GitHub Stats", component: <AboutGitHubStats /> },
+  { id: 3, text: "GitHub", component: <AboutGitHubStats /> },
 ];

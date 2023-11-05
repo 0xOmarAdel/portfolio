@@ -24,7 +24,7 @@ const AboutImage = () => {
       animate={inView ? "visible" : "hidden"}
       variants={opacityVariants(1)}
       ref={ref}
-      className="order-1 lg:order-2 shrink-0 max-w-lg mx-auto"
+      className="order-1 xl:order-2 shrink-0 max-w-lg mx-auto xl:mx-0"
     >
       <Lottie
         lottieRef={animationRef}
