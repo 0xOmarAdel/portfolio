@@ -42,6 +42,7 @@ body {
 }
 
 html {
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -65,13 +66,13 @@ html {
 
 .scrolling-image {
   width: 100%;
-  height: 1000px; /* Full height of the image */
+  height: 1100px; /* Full height of the image */
   cursor: grab;
   transition: transform 1.5s ease; /* Smooth transition effect */
 }
 
 .image-container:hover .scrolling-image {
   transform: translateY(
-    -700px
+    -800px
   ); /* Adjust the Y-axis to scroll through the image */
 }
