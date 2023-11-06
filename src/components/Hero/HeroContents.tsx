@@ -46,12 +46,14 @@ const HeroContent = () => {
           {heroText}
         </motion.p>
         <motion.div className="relative w-fit">
-          <Button
-            text="Learn More"
-            href="#about"
-            lottieAnimation={arrowDownAnimation}
-            lottieAnimationClasses="scale-[1.6]"
-          />
+          <motion.div variants={slideInFromLeftVariants(100, 0.5, 1)}>
+            <Button
+              text="Learn More"
+              href="#about"
+              lottieAnimation={arrowDownAnimation}
+              lottieAnimationClasses="scale-[1.6]"
+            />
+          </motion.div>
           <motion.div variants={opacityVariants(0.5, 1.3)}>
             <Lottie
               animationData={arrowAnimation}
