@@ -101,7 +101,7 @@ export const skills = [
   {
     id: 16,
     icon: <PiFramerLogo />,
-    text: "Motion Framer",
+    text: "Framer Motion",
   },
   {
     id: 17,
