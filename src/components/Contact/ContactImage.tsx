@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 import { slideInFromBottomVariants } from "../../utils/motion";
 import { useInView } from "react-intersection-observer";
 import contactAnimation from "../../assets/contactAnimation.json";
-import Lottie from "lottie-react";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { useEffect, useRef } from "react";
-import { LottieRefCurrentProps } from "lottie-react";
 
 const ContactImage: React.FC = () => {
   const { ref, inView } = useInView({
