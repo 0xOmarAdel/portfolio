@@ -1,7 +1,7 @@
 import socioApp from "../assets/shopNest.png";
 import shopNest from "../assets/shopNest.png";
 import movieMaze from "../assets/movieMaze.png";
-import cms from "../assets/movieMaze.png";
+import cms from "../assets/cms.png";
 import dreamRestaurant from "../assets/movieMaze.png";
 import bookHaven from "../assets/movieMaze.png";
 
@@ -12,6 +12,7 @@ export const projectsList = [
     description:
       "Socio is a powerful and feature-rich social media application that allows users to connect, share, and engage with their friends and followers. With Socio, you can seamlessly enjoy all the essential social media features, from following and unfollowing users to posting updates, commenting on posts, uploading photos, managing your profile, and much more.",
     image: socioApp,
+    imageHeight: 1100,
     link: "https://sociooapp.netlify.app",
     github: "https://github.com/MrGhost23/socio-app",
     collaborators: [
@@ -42,6 +43,7 @@ export const projectsList = [
     description:
       "Shop Nest is a feature-rich ecommerce web app offering a wide range of products. Browse categories, apply filters, search, and enjoy a secure checkout. Wishlist items, manage profile, addresses, orders, and reviews. Experience seamless shopping with authentication and personalized recommendations.",
     image: shopNest,
+    imageHeight: 1100,
     link: "https://shop-nest-app.netlify.app",
     github: "https://github.com/0xOmarAdel/shop-nest",
     tags: [
@@ -62,6 +64,7 @@ export const projectsList = [
     description:
       "Movie Maze App is a React.js web application that utilizes the TMDB API to provide users with a seamless experience of exploring movies and TV series. Discover, search, and view details of your favorite titles with ease. Find top-rated movies, popular shows, and the best providers.",
     image: movieMaze,
+    imageHeight: 1100,
     link: "https://movie-maze-app.netlify.app",
     github: "https://github.com/0xOmarAdel/movie-maze",
     tags: [
@@ -81,6 +84,7 @@ export const projectsList = [
     description:
       "The Complaint Management System is a web-based application designed to help organizations efficiently handle and track customer complaints and feedback. This system streamlines the process of receiving, documenting, and resolving complaints, ensuring a better customer experience and improved service quality.",
     image: cms,
+    imageHeight: 500,
     link: "https://cms-complaints-app.netlify.app",
     github: "https://github.com/0xOmarAdel/cms",
     collaborators: [
@@ -108,6 +112,7 @@ export const projectsList = [
     title: "Dream Restaurant",
     description: "Dream Restaurant.",
     image: dreamRestaurant,
+    imageHeight: 1100,
     link: "https://dream-restaurant.netlify.app",
     github: "https://github.com/0xOmarAdel/dream",
     collaborators: [
@@ -140,6 +145,7 @@ export const projectsList = [
     title: "Book Haven",
     description: "Book Haven.",
     image: bookHaven,
+    imageHeight: 1100,
     link: "https://book-haven-app.netlify.app",
     github: "https://github.com/0xOmarAdel/book-haven",
     tags: [

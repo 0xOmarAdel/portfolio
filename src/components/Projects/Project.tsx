@@ -10,6 +10,7 @@ import ProjectImage from "./ProjectImage";
 type Props = {
   id: number;
   image: string;
+  imageHeight: number;
   title: string;
   description: string;
   tags: string[];
@@ -33,6 +34,7 @@ const ProjectsItem: React.FC<Props> = (props) => {
     >
       <ProjectImage
         image={props.image}
+        imageHeight={props.imageHeight}
         title={props.title}
         github={props.github}
         link={props.link}
