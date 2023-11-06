@@ -16,6 +16,7 @@ const ContactImage: React.FC = () => {
   useEffect(() => {
     if (inView) {
       animationRef.current!.play();
+      animationRef.current!.setSpeed(0.7);
     }
   }, [inView]);
 
