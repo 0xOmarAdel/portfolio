@@ -15,9 +15,14 @@ const Skills = () => {
           Making apps with modern technologies
         </div>
       </div>
-      <div className="w-ful -mx-3 sm:-mx-5 flex flex-row flex-wrap items-center justify-center">
-        {skills.map((image, index) => (
-          <SingleSkill key={image.id} icon={image.icon} index={index} />
+      <div className="w-full -mx-3 sm:-mx-5 flex flex-row flex-wrap items-center justify-center">
+        {skills.map((skill, index) => (
+          <SingleSkill
+            key={skill.id}
+            icon={skill.icon}
+            text={skill.text}
+            index={index}
+          />
         ))}
       </div>
     </Section>

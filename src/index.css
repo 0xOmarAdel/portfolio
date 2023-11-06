@@ -39,3 +39,22 @@ body {
   @apply h-fit w-full px-4 py-1.5 bg-transparent border border-violet-700 border-opacity-20 rounded-sm outline-none focus:border-violet-700 transition duration-300;
   border: 1px solid rgb(48 35 68 / 71%);
 }
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
