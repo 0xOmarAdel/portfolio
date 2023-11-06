@@ -62,7 +62,9 @@ const Navbar = () => {
           className="shrink-0 relative z-[100] h-auto w-auto flex flex-row items-center"
           onClick={closeMenuHandler}
         >
-          <span className="text-3xl text-gray-300 font-bold capitalize">{name}</span>
+          <span className="text-3xl text-gray-300 font-bold capitalize">
+            {name}
+          </span>
         </a>
 
         <div
@@ -92,9 +94,14 @@ const Navbar = () => {
             </ul>
           </nav>
 
-          <div className="flex flex-row gap-5 text-xl text-white">
+          <div className="flex flex-row gap-5 text-xl">
             {socials.map((social) => (
-              <a key={social.title} href={social.path} target="_blank">
+              <a
+                key={social.title}
+                href={social.path}
+                target="_blank"
+                className="transition duration-300 hover:text-white"
+              >
                 <social.icon />
               </a>
             ))}
