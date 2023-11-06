@@ -19,18 +19,15 @@ const SingleSkill = ({ icon: Icon, text, index }: Props) => {
   };
 
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
 
-  const handleFlip = () => {
-    if (!isAnimating) {
-      setIsFlipped((prevState) => !prevState);
-      setIsAnimating(true);
+  const hoverStartHandler = () => {
+      setIsFlipped(true);
+  };
 
-      setTimeout(() => {
+  const hoverEndHandler = () => {
+    setTimeout(() => {
         setIsFlipped(false);
-        setIsAnimating(false);
-      }, 1500);
-    }
+    }, 1500);
   };
 
   const animationDelay = 0.2;
@@ -49,8 +46,8 @@ const SingleSkill = ({ icon: Icon, text, index }: Props) => {
         initial={false}
         animate={{ rotateY: isFlipped ? 180 : 360 }}
         transition={{ duration: 0.6, animationDirection: "normal" }}
-        onAnimationComplete={() => setIsAnimating(false)}
-        onHoverStart={!isFlipped ? handleFlip : () => {}}
+        onHoverStart={hoverStartHandler}
+        onHoverEnd={hoverEndHandler}
       >
         <div className="flip-card-front w-full h-full flex flex-row items-center justify-center border-[2px] border-violet-600 border-opacity-60 rounded-md text-4xl sm:text-5xl text-white">
           {Icon}
