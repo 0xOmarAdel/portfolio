@@ -62,7 +62,7 @@ const Navbar = () => {
           className="shrink-0 relative z-[100] h-auto w-auto flex flex-row items-center"
           onClick={closeMenuHandler}
         >
-          <span className="text-3xl text-gray-200 font-bold capitalize">
+          <span className="text-3xl text-gray-100 font-bold capitalize">
             {name}
           </span>
         </a>
