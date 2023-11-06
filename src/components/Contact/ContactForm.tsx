@@ -4,7 +4,11 @@ import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import FormError from "./ContactFormError";
-import { opacityVariants, slideInFromBottomVariants } from "../../utils/motion";
+import {
+  opacityVariants,
+  slideInFromBottomVariants,
+  scaleOpacityVariants,
+} from "../../utils/motion";
 import { useInView } from "react-intersection-observer";
 
 const ContactForm: React.FC = () => {
@@ -145,7 +149,7 @@ const ContactForm: React.FC = () => {
           )}
         </div>
         <motion.button
-          variants={slideInFromBottomVariants(30, 0.5, 1.5)}
+          variants={scaleOpacityVariants(0.5, 0.2, 1.5)}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           type="submit"
