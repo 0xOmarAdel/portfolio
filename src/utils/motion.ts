@@ -87,13 +87,19 @@ export const opacityVariants = (duration = 0.5, delay = 0) => {
   };
 };
 
-export const scaleVariants = (initial: number, duration = 0.5, delay = 0) => {
+export const scaleOpacityVariants = (
+  initialScale: number,
+  duration = 0.5,
+  delay = 0
+) => {
   return {
     hidden: {
-      scale: initial,
+      scale: initialScale,
+      opacity: 0,
     },
     visible: {
       scale: 1,
+      opacity: 1,
       transition: {
         duration,
         delay,
