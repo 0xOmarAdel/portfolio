@@ -3,7 +3,7 @@ type Props = {
 };
 
 const ProjectTitle: React.FC<Props> = ({ title }) => {
-  return <h3 className="text-2xl font-semibold">{title}</h3>;
+  return <p className="text-2xl font-semibold">{title}</p>;
 };
 
 export default ProjectTitle;

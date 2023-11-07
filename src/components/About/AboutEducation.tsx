@@ -12,7 +12,7 @@ const AboutEducation = () => {
       </div>
       <div className="flex flex-col gap-0.5">
         <h3 className="text-lg md:text-xl font-semibold">{education.degree}</h3>
-        <h4 className="mt-1">{education.college}</h4>
+        <p className="mt-1">{education.college}</p>
         <p className="mt-0.5 text-sm text-gray-400">
           {education.started} – {education.graduated}
         </p>
