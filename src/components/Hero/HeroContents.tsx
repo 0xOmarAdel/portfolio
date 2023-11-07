@@ -20,7 +20,7 @@ const HeroContent = () => {
       animate="visible"
       className="relative z-10 w-full grid grid-cols-8 items-center justify-center translate-y-[15%] lg:translate-y-0"
     >
-      <div className="col-span-7 lg:col-span-5 h-full w-full flex flex-col justify-center">
+      <div className="col-span-8 lg:col-span-5 h-full w-full flex flex-col justify-center">
         <motion.div
           variants={slideInFromTopVariants(100, 0.5, 0.2)}
           className="sm:-ml-20 lg:-ml-8 flex flex-row items-center justify-center lg:justify-start text-center lg:text-left"
