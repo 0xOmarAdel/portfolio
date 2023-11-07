@@ -14,6 +14,7 @@ This portfolio website is built using the following technologies and libraries:
 - **Framer Motion**: Used for creating smooth animations.
 - **Three.js**: Employed for 3D animations and interactions.
 - **Lottie**: Utilized for dynamic and interactive animations.
+- **React-Image**: Utilized for efficient image handling and rendering.
 - **Hamburger-react**: Implemented for the navigation menu icon.
 - **React-Github-Calendar**: Utilized to display GitHub activity stats.
 - **React-Tooltip**: Utilized for interactive tooltip functionality.
