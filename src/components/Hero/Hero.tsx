@@ -4,12 +4,12 @@ import HeroContent from "./HeroContents";
 
 const Hero = () => {
   return (
-    <Section id="home" className="py-0 mb-20 relative flex flex-col">
+    <Section id="home" className="min-h-screen py-0 relative flex flex-row items-center justify-center">
       <video
         autoPlay
         muted
         loop
-        className="w-full h-full absolute top-[-340px] left-0 z-10 object-cover rotate-180"
+        className="w-full h-full absolute top-[-420px] left-0 z-10 object-cover rotate-180"
       >
         <source src={blackhole} type="video/webm" />
       </video>
