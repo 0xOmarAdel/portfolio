@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the code for my personal portfolio website. It showcases my skills, projects, and experiences as a front-end web developer.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio website is built using the following technologies and libraries:
 
-## Expanding the ESLint configuration
+- **React**: Used as the primary front-end framework.
+- **TypeScript**: Enhances code quality and development experience.
+- **Vite**: Bundler for faster development and optimized production builds.
+- **ESLint and Prettier**: Tools for maintaining code quality and formatting.
+- **Tailwind CSS**: Utilized for efficient styling and design.
+- **Framer Motion**: Used for creating smooth animations.
+- **Three.js**: Employed for 3D animations and interactions.
+- **Lottie**: Utilized for dynamic and interactive animations.
+- **Hamburger-react**: Implemented for the navigation menu icon.
+- **React-Github-Calendar**: Utilized to display GitHub activity stats.
+- **React-Tooltip**: Utilized for interactive tooltip functionality.
+- **Formik and Yup**: Used for managing forms and form validation.
+- **EmailJS**: Integrated for the contact form functionality.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+For a complete list of dependencies and their versions, refer to the `package.json` file in the repository.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
