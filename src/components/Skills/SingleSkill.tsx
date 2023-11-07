@@ -42,7 +42,7 @@ const SingleSkill = ({ icon: Icon, text, index }: Props) => {
       className="flip-card basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 relative h-full w-full"
     >
       <motion.div
-        className="flip-card-inner w-22 h-44 mx-3 sm:mx-5 mb-6 sm:mb-10 cursor-pointer"
+        className="flip-card-inner w-22 h-28 sm:h-36 mx-3 sm:mx-5 mb-6 sm:mb-10 cursor-pointer"
         initial={false}
         animate={{ rotateY: isFlipped ? 180 : 360 }}
         transition={{ duration: 0.6, animationDirection: "normal" }}
