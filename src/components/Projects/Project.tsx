@@ -9,7 +9,8 @@ import ProjectImage from "./ProjectImage";
 
 type Props = {
   id: number;
-  image: string;
+  webpSrc: string;
+  pngSrc: string;
   imageHeight: number;
   title: string;
   description: string;
@@ -33,7 +34,8 @@ const ProjectsItem: React.FC<Props> = (props) => {
       className="glass flex flex-col overflow-hidden"
     >
       <ProjectImage
-        image={props.image}
+        webpSrc={props.webpSrc}
+        pngSrc={props.pngSrc}
         imageHeight={props.imageHeight}
         title={props.title}
         github={props.github}

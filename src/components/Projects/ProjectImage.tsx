@@ -2,9 +2,11 @@ import { useState } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { useImage } from "react-image";
 
 type Props = {
-  image: string;
+  webpSrc: string;
+  pngSrc: string;
   imageHeight: number;
   title: string;
   link: string;
@@ -12,12 +14,17 @@ type Props = {
 };
 
 const ProjectImage: React.FC<Props> = ({
-  image,
+  webpSrc,
+  pngSrc,
   imageHeight,
   title,
   github,
   link,
 }) => {
+  const { src } = useImage({
+    srcList: [webpSrc, pngSrc],
+  });
+
   const translateTo = -(imageHeight - 300);
   const animationDuration = (imageHeight / 100) * 0.12;
 
@@ -38,8 +45,8 @@ const ProjectImage: React.FC<Props> = ({
         initial={{ y: 0 }}
         animate={isHovered ? { y: translateTo } : { y: 0 }}
         transition={{ duration: animationDuration }}
-        src={image}
-        alt={`${title} project`}
+        src={src}
+        alt={title}
         style={{ height: `${imageHeight}px` }}
         className="w-full cursor-grab"
       />
@@ -48,7 +55,6 @@ const ProjectImage: React.FC<Props> = ({
           href={github}
           target="_blank"
           className="transition duration-500 hover:text-gray-300"
-          aria-label={`${title} github page`}
         >
           <FaGithub />
         </a>
@@ -56,7 +62,6 @@ const ProjectImage: React.FC<Props> = ({
           href={link}
           target="_blank"
           className="transition duration-500 hover:text-gray-300"
-          aria-label={`${title} live preview`}
         >
           <RiExternalLinkLine />
         </a>
