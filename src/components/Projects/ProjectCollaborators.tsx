@@ -19,7 +19,7 @@ const ProjectCollaborators: React.FC<Props> = ({ collaborators }) => {
             <img
               src={collaborator.image}
               alt={`${collaborator.username}'s avatar`}
-              className="w-5 rounded-full"
+              className="w-5 h-5 rounded-full"
             />
           </a>
         ))}
