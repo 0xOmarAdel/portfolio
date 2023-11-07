@@ -14,6 +14,7 @@ const ProjectCollaborators: React.FC<Props> = ({ collaborators }) => {
             key={collaborator.username}
             href={`https://github.com/${collaborator.username}`}
             target="_blank"
+            aria-label={`${collaborator.username} github account`}
           >
             <img
               src={collaborator.image}
