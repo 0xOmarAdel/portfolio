@@ -49,10 +49,10 @@ const SingleSkill = ({ icon: Icon, text, index }: Props) => {
         onHoverStart={hoverStartHandler}
         onHoverEnd={hoverEndHandler}
       >
-        <div className="flip-card-front w-full h-full flex flex-row items-center justify-center border-[2px] border-violet-600 border-opacity-60 rounded-md text-4xl sm:text-5xl text-white">
+        <div className="flip-card-front w-full h-full flex flex-row items-center justify-center border-[2px] border-violet-700 border-opacity-60 rounded-md text-4xl sm:text-5xl text-white">
           {Icon}
         </div>
-        <div className="flip-card-back w-full h-full flex flex-row items-center justify-center bg-violet-600 rounded-md text-xl sm:text-2xl text-white">
+        <div className="flip-card-back w-full h-full flex flex-row items-center justify-center bg-violet-700 rounded-md text-xl sm:text-2xl text-white">
           {text}
         </div>
       </motion.div>
