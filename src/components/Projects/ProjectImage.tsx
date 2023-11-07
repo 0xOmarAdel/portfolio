@@ -54,6 +54,7 @@ const ProjectImage: React.FC<Props> = ({
         <a
           href={github}
           target="_blank"
+          aria-label={`${title} github page`}
           className="transition duration-500 hover:text-gray-300"
         >
           <FaGithub />
@@ -61,6 +62,7 @@ const ProjectImage: React.FC<Props> = ({
         <a
           href={link}
           target="_blank"
+          aria-label={`${title} live preview`}
           className="transition duration-500 hover:text-gray-300"
         >
           <RiExternalLinkLine />
