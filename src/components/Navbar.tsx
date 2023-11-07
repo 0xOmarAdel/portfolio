@@ -101,6 +101,7 @@ const Navbar = () => {
                 href={social.path}
                 target="_blank"
                 className="transition duration-300 hover:text-white"
+                aria-label={`${social.title} account`}
               >
                 <social.icon />
               </a>

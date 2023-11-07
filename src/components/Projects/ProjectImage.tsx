@@ -39,7 +39,7 @@ const ProjectImage: React.FC<Props> = ({
         animate={isHovered ? { y: translateTo } : { y: 0 }}
         transition={{ duration: animationDuration }}
         src={image}
-        alt={title}
+        alt={`${title} project`}
         style={{ height: `${imageHeight}px` }}
         className="w-full cursor-grab"
       />
@@ -48,6 +48,7 @@ const ProjectImage: React.FC<Props> = ({
           href={github}
           target="_blank"
           className="transition duration-500 hover:text-gray-300"
+          aria-label={`${title} github page`}
         >
           <FaGithub />
         </a>
@@ -55,6 +56,7 @@ const ProjectImage: React.FC<Props> = ({
           href={link}
           target="_blank"
           className="transition duration-500 hover:text-gray-300"
+          aria-label={`${title} live preview`}
         >
           <RiExternalLinkLine />
         </a>
