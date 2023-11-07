@@ -113,6 +113,7 @@ const Navbar = () => {
             toggled={menuIsOpened}
             toggle={setMenuIsOpened}
             size={22}
+            label="Menu icon"
           />
         </div>
       </div>
