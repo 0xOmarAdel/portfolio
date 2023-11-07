@@ -15,7 +15,11 @@ const ProjectCollaborators: React.FC<Props> = ({ collaborators }) => {
             href={`https://github.com/${collaborator.username}`}
             target="_blank"
           >
-            <img src={collaborator.image} className="w-5 rounded-full" />
+            <img
+              src={collaborator.image}
+              alt={`${collaborator.username}'s avatar`}
+              className="w-5 rounded-full"
+            />
           </a>
         ))}
       </div>
