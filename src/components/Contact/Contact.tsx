@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Section
       id="contact"
-      className="flex flex-col items-center justify-center lg:gap-10"
+      className="relative z-40 flex flex-col items-center justify-center lg:gap-10"
     >
       <SectionHeading text="Get In" gradient="Touch" />
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-20">

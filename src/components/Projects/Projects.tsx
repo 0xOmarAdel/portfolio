@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Section
       id="projects"
-      className="flex flex-col items-center justify-center gap-12"
+      className="relative z-40 flex flex-col items-center justify-center gap-12"
     >
       <SectionHeading text="Recent" gradient="Projects" />
       <ProjectsImagesGrid />

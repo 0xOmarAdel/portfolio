@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <Section
       id="skills"
-      className="flex flex-col items-center justify-center gap-10"
+      className="relative z-40 flex flex-col items-center justify-center gap-10"
     >
       <div className="flex flex-col items-center justify-center gap-6">
         <SectionHeading text="Professional" gradient="Skillset" />

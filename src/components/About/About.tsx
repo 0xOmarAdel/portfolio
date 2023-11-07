@@ -11,7 +11,7 @@ const About = () => {
   return (
     <Section
       id="about"
-      className="flex flex-col items-center justify-center gap-10"
+      className="relative z-40 flex flex-col items-center justify-center gap-10"
     >
       <SectionHeading text="About" gradient="Me" />
       <div className="w-full flex flex-col xl:flex-row justify-between gap-9 xl:gap-12">

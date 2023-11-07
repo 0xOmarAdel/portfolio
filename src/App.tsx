@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <>
       <StarsCanvas />
-      <div className="relative z-50 flex flex-col">
+      <div className="flex flex-col">
         <Navbar />
         <Hero />
         <About />
