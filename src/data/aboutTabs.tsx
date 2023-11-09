@@ -6,7 +6,7 @@ interface Tab {
   id: number;
   text: string;
   component: React.ComponentType;
-  componentPath: React.string;
+  componentPath: string;
 }
 
 export const aboutTabs: Tab[] = [
