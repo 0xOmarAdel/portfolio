@@ -1,4 +1,5 @@
 import { GoPeople } from "react-icons/go";
+import ProjectCollaborator from "./ProjectCollaborator";
 
 type Props = {
   collaborators: { username: string; image: string }[];
@@ -10,18 +11,10 @@ const ProjectCollaborators: React.FC<Props> = ({ collaborators }) => {
       <GoPeople className="text-lg" />
       <div className="flex flex-row gap-2">
         {collaborators.map((collaborator) => (
-          <a
+          <ProjectCollaborator
             key={collaborator.username}
-            href={`https://github.com/${collaborator.username}`}
-            target="_blank"
-            aria-label={`${collaborator.username} github account`}
-          >
-            <img
-              src={collaborator.image}
-              alt={`${collaborator.username}'s avatar`}
-              className="w-5 h-5 rounded-full"
-            />
-          </a>
+            collaborator={collaborator}
+          />
         ))}
       </div>
     </div>
