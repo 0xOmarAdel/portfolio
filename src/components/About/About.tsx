@@ -8,9 +8,7 @@ import SectionHeading from "../../ui/SectionHeading";
 const About = () => {
   const [selectedTab, setSelectedTab] = useState(aboutTabs[0]);
 
-  const LazyComponent = lazy(
-    () => import(`../../components/About/${selectedTab.componentPath}`)
-  );
+  const LazyComponent = lazy(() => import(`./${selectedTab.component}`));
 
   return (
     <Section
