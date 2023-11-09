@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { aboutTabs } from "../../data/aboutTabs";
 import AboutImage from "./AboutImage";
@@ -7,6 +7,8 @@ import SectionHeading from "../../ui/SectionHeading";
 
 const About = () => {
   const [selectedTab, setSelectedTab] = useState(aboutTabs[0]);
+
+  const LazyComponent = lazy(() => import(`./${selectedTab.componentPath}`));
 
   return (
     <Section
@@ -47,7 +49,9 @@ const About = () => {
               transition={{ duration: 0.2 }}
               className="grow-0 flex flex-col items-center xl:items-start"
             >
-              {selectedTab.component}
+              <Suspense fallback={<div>Loading...</div>}>
+                <LazyComponent />
+              </Suspense>
             </motion.div>
           </AnimatePresence>
         </div>
