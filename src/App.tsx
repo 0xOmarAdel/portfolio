@@ -1,11 +1,14 @@
-import About from "./components/About/About.tsx";
-import Contact from "./components/Contact/Contact.tsx";
-import Footer from "./components/Footer.tsx";
-import Hero from "./components/Hero/Hero.tsx";
-import Navbar from "./components/Navbar.tsx";
-import Projects from "./components/Projects/Projects.tsx";
-import Skills from "./components/Skills/Skills.tsx";
+// @ts-ignore
+import loadable from "@loadable/component";
 import StarsCanvas from "./components/StarsBackground.tsx";
+import Navbar from "./components/Navbar.tsx";
+import Footer from "./components/Footer.tsx";
+
+const About = loadable(() => import("./components/About/About.tsx"));
+const Hero = loadable(() => import("./components/Hero/Hero.tsx"));
+const Skills = loadable(() => import("./components/Skills/Skills.tsx"));
+const Projects = loadable(() => import("./components/Projects/Projects.tsx"));
+const Contact = loadable(() => import("./components/Contact/Contact.tsx"));
 
 const App: React.FC = () => {
   return (

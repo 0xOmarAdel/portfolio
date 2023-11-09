@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@loadable/component": "^5.15.3",
     "formik": "^2.4.5",
     "hamburger-react": "^2.5.0",
     "lottie-react": "^2.4.0",
