@@ -4,11 +4,12 @@ import { aboutTabs } from "../../data/aboutTabs";
 import AboutImage from "./AboutImage";
 import Section from "../../ui/Section";
 import SectionHeading from "../../ui/SectionHeading";
+const AboutOverview = lazy(() => import(`./AboutOverview`));
+const AboutEducation = lazy(() => import(`./AboutEducation`));
+const AboutGitHubStats = lazy(() => import(`./AboutGitHubStats`));
 
 const About = () => {
   const [selectedTab, setSelectedTab] = useState(aboutTabs[0]);
-
-  const LazyComponent = lazy(() => import(`./${selectedTab.component}`));
 
   return (
     <Section
@@ -50,7 +51,13 @@ const About = () => {
               className="grow-0 flex flex-col items-center xl:items-start"
             >
               <Suspense fallback={<div>Loading...</div>}>
-                <LazyComponent />
+                {selectedTab.component === "AboutOverview" ? (
+                  <AboutOverview />
+                ) : selectedTab.component === "AboutEducation" ? (
+                  <AboutEducation />
+                ) : (
+                  <AboutGitHubStats />
+                )}
               </Suspense>
             </motion.div>
           </AnimatePresence>
