@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { useImage } from "react-image";
 
 type Props = {
-  webpSrc: string;
-  pngSrc: string;
-  imageHeight: number;
+  webpSrc?: string;
+  pngSrc?: string;
+  imageHeight?: number;
   title: string;
   link: string;
   github: string;
@@ -21,12 +21,25 @@ const ProjectImage: React.FC<Props> = ({
   github,
   link,
 }) => {
+  const images = [];
+
+  if (webpSrc && pngSrc) {
+    images.push(webpSrc);
+    images.push(pngSrc);
+  }
+  if (webpSrc) {
+    images.push(webpSrc);
+  } else if (pngSrc) {
+    images.push(pngSrc);
+  } else {
+    images.push("https://placehold.co/800x500");
+  }
   const { src } = useImage({
-    srcList: [webpSrc, pngSrc],
+    srcList: images,
   });
 
-  const translateTo = -(imageHeight - 300);
-  const animationDuration = (imageHeight / 100) * 0.12;
+  const translateTo = imageHeight ? -(imageHeight - 300) : 0;
+  const animationDuration = imageHeight ? (imageHeight / 100) * 0.12 : 0;
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -47,7 +60,7 @@ const ProjectImage: React.FC<Props> = ({
         transition={{ duration: animationDuration }}
         src={src}
         alt={title}
-        style={{ height: `${imageHeight}px` }}
+        style={{ height: imageHeight ? `${imageHeight}px` : "100%" }}
         className="w-full cursor-grab"
       />
       <div className="absolute top-1/2 right-0 pl-2 pr-1 py-1.5 bg-[#1f1147] rounded-tl-xl rounded-bl-xl flex flex-col gap-2 text-xl text-gray-400 -translate-y-1/2">

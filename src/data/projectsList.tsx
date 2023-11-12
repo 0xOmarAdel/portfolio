@@ -2,15 +2,11 @@ import socioAppPNG from "../assets/socioApp.png";
 import shopNestPNG from "../assets/shopNest.png";
 import movieMazePNG from "../assets/movieMaze.png";
 import cmsPNG from "../assets/cms.png";
-import dreamRestaurantPNG from "../assets/movieMaze.png";
-import bookHavenPNG from "../assets/movieMaze.png";
 
 import socioAppWEBP from "../assets/socioApp.webp";
 import shopNestWEBP from "../assets/shopNest.webp";
 import movieMazeWEBP from "../assets/movieMaze.webp";
 import cmsWEBP from "../assets/cms.webp";
-import dreamRestaurantWEBP from "../assets/movieMaze.webp";
-import bookHavenWEBP from "../assets/movieMaze.webp";
 
 export const projectsList = [
   {
@@ -122,9 +118,6 @@ export const projectsList = [
     id: 5,
     title: "Dream Restaurant",
     description: "Dream Restaurant.",
-    webpSrc: dreamRestaurantWEBP,
-    pngSrc: dreamRestaurantPNG,
-    imageHeight: 1100,
     link: "https://dream-restaurant.netlify.app",
     github: "https://github.com/0xOmarAdel/dream",
     collaborators: [
@@ -156,9 +149,6 @@ export const projectsList = [
     id: 6,
     title: "Book Haven",
     description: "Book Haven.",
-    webpSrc: bookHavenWEBP,
-    pngSrc: bookHavenPNG,
-    imageHeight: 1100,
     link: "https://book-haven-app.netlify.app",
     github: "https://github.com/0xOmarAdel/book-haven",
     tags: [
