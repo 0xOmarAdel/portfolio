@@ -1,11 +1,11 @@
-import socioAppPNG from "../assets/shopNest.png";
+import socioAppPNG from "../assets/socioApp.png";
 import shopNestPNG from "../assets/shopNest.png";
 import movieMazePNG from "../assets/movieMaze.png";
 import cmsPNG from "../assets/cms.png";
 import dreamRestaurantPNG from "../assets/movieMaze.png";
 import bookHavenPNG from "../assets/movieMaze.png";
 
-import socioAppWEBP from "../assets/shopNest.webp";
+import socioAppWEBP from "../assets/socioApp.webp";
 import shopNestWEBP from "../assets/shopNest.webp";
 import movieMazeWEBP from "../assets/movieMaze.webp";
 import cmsWEBP from "../assets/cms.webp";
@@ -20,7 +20,7 @@ export const projectsList = [
       "Socio is a powerful and feature-rich social media application that allows users to connect, share, and engage with their friends and followers. With Socio, you can seamlessly enjoy all the essential social media features, from following and unfollowing users to posting updates, commenting on posts, uploading photos, managing your profile, and much more.",
     webpSrc: socioAppWEBP,
     pngSrc: socioAppPNG,
-    imageHeight: 1100,
+    imageHeight: 800,
     link: "https://sociooapp.netlify.app",
     github: "https://github.com/MrGhost23/socio-app",
     collaborators: [
