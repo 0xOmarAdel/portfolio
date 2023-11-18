@@ -2,8 +2,13 @@ import SingleSkill from "./SingleSkill";
 import { skills } from "../../data/skills";
 import Section from "../../ui/Section";
 import SectionHeading from "../../ui/SectionHeading";
+import {useInView} from 'react-intersection-observer';
 
 const Skills = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <Section
       id="skills"
@@ -15,10 +20,14 @@ const Skills = () => {
           Making apps with modern technologies
         </div>
       </div>
-      <div className="w-[calc(100%+1.5rem)] sm:w-[calc(100%+2.5rem)] flex flex-row flex-wrap items-center justify-center">
+      <div
+        ref={ref}
+        className="w-[calc(100%+1.5rem)] sm:w-[calc(100%+2.5rem)] flex flex-row flex-wrap items-center justify-center"
+      >
         {skills.map((skill, index) => (
           <SingleSkill
             key={skill.id}
+            inView={inView}
             icon={skill.icon}
             text={skill.text}
             index={index}

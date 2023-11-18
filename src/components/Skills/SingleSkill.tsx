@@ -1,18 +1,14 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useInView } from "react-intersection-observer";
 
 interface Props {
+  inView: boolean;
   icon: React.ReactNode;
   text: string;
   index: number;
 }
 
-const SingleSkill = ({ icon: Icon, text, index }: Props) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
-
+const SingleSkill = ({ inView, icon: Icon, text, index }: Props) => {
   const imageVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -21,19 +17,18 @@ const SingleSkill = ({ icon: Icon, text, index }: Props) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const hoverStartHandler = () => {
-      setIsFlipped(true);
+    setIsFlipped(true);
   };
 
   const hoverEndHandler = () => {
     setTimeout(() => {
-        setIsFlipped(false);
+      setIsFlipped(false);
     }, 1500);
   };
 
-  const animationDelay = 0.2;
+  const animationDelay = 0.15;
   return (
     <motion.div
-      ref={ref}
       initial="hidden"
       variants={imageVariants}
       animate={inView ? "visible" : "hidden"}
