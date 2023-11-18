@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import ProjectCollaborators from "./ProjectCollaborators";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTags from "./ProjectTags";
@@ -8,6 +7,7 @@ import { slideInFromBottomVariants } from "../../utils/motion";
 import ProjectImage from "./ProjectImage";
 
 type Props = {
+  inView: boolean;
   id: number;
   webpSrc?: string;
   pngSrc?: string;
@@ -20,17 +20,12 @@ type Props = {
   github: string;
 };
 
-const ProjectsItem: React.FC<Props> = (props) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
-
+const ProjectsItem: React.FC<Props> = ({ inView, ...props }) => {
   return (
     <motion.div
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={slideInFromBottomVariants(50, 0.5, 0.25 * props.id)}
-      ref={ref}
       className="glass flex flex-col overflow-hidden"
     >
       <ProjectImage

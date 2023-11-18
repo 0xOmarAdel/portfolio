@@ -1,5 +1,5 @@
 import Section from "../../ui/Section";
-import ProjectsImagesGrid from "./ProjectsGrid";
+import ProjectsGrid from "./ProjectsGrid";
 import SectionHeading from "../../ui/SectionHeading";
 
 const Projects = () => {
@@ -9,7 +9,7 @@ const Projects = () => {
       className="relative z-40 flex flex-col items-center justify-center gap-12"
     >
       <SectionHeading text="Recent" gradient="Projects" />
-      <ProjectsImagesGrid />
+      <ProjectsGrid />
     </Section>
   );
 };
