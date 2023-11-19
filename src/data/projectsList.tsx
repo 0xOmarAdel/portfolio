@@ -118,37 +118,6 @@ export const projectsList = [
   },
   {
     id: 5,
-    title: "Dream Restaurant",
-    description: "Dream Restaurant.",
-    link: "https://dream-restaurant.netlify.app",
-    github: "https://github.com/0xOmarAdel/dream",
-    collaborators: [
-      {
-        username: "MrGhost23",
-        image: "https://avatars.githubusercontent.com/u/72778139",
-      },
-      {
-        username: "noahwillson",
-        image: "https://avatars.githubusercontent.com/u/79482929",
-      },
-    ],
-    tags: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "React Router",
-      "Redux Toolkit",
-      "Tailwind",
-      "Daisy UI",
-      "Axios",
-      "Node JS",
-      "Express",
-      "Mongo DB",
-    ],
-  },
-  {
-    id: 6,
     title: "Study Sphere",
     description:
       "Study Sphere is a platform designed for educational purposes. The app includes sections such as a hero banner, an about page, a teachers section, courses page, and a contact section using the emailjs library for email functionality.",
