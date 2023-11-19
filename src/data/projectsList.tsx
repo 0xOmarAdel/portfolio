@@ -150,7 +150,8 @@ export const projectsList = [
   {
     id: 6,
     title: "Study Sphere",
-    description: "Study Sphere.",
+    description:
+      "Study Sphere is a platform designed for educational purposes. The app includes sections such as a hero banner, an about page, a teachers section, courses page, and a contact section using the emailjs library for email functionality.",
     webpSrc: studySphereWEBP,
     pngSrc: studySpherePNG,
     imageHeight: 1300,
