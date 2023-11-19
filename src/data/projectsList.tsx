@@ -2,11 +2,13 @@ import socioAppPNG from "../assets/socioApp.png";
 import shopNestPNG from "../assets/shopNest.png";
 import movieMazePNG from "../assets/movieMaze.png";
 import cmsPNG from "../assets/cms.png";
+import studySpherePNG from "../assets/studySphere.png";
 
 import socioAppWEBP from "../assets/socioApp.webp";
 import shopNestWEBP from "../assets/shopNest.webp";
 import movieMazeWEBP from "../assets/movieMaze.webp";
 import cmsWEBP from "../assets/cms.webp";
+import studySphereWEBP from "../assets/studySphere.webp";
 
 export const projectsList = [
   {
@@ -147,20 +149,25 @@ export const projectsList = [
   },
   {
     id: 6,
-    title: "Book Haven",
-    description: "Book Haven.",
-    link: "https://book-haven-app.netlify.app",
-    github: "https://github.com/0xOmarAdel/book-haven",
+    title: "Study Sphere",
+    description: "Study Sphere.",
+    webpSrc: studySphereWEBP,
+    pngSrc: studySpherePNG,
+    imageHeight: 1300,
+    link: "https://study-sphere.netlify.app",
+    github: "https://github.com/0xOmarAdel/study-sphere",
     tags: [
       "HTML",
       "CSS",
       "Javascript",
-      "Typescript",
       "React",
-      "React Router",
-      "React Lottie",
-      "Tailwind",
+      "Chakra UI",
       "Framer Motion",
+      "Formik",
+      "Yup",
+      "Typed JS",
+      "Swiper JS",
+      "Google Map React",
     ],
   },
 ];
