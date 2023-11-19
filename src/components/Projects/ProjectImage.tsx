@@ -36,7 +36,7 @@ const ProjectImage: React.FC<Props> = ({
     srcList: images,
   });
 
-  const translateTo = imageHeight - 300;
+  const translateTo = -(imageHeight - 300);
   const animationDuration = (imageHeight / 100) * 0.12;
 
   const [isHovered, setIsHovered] = useState(false);
