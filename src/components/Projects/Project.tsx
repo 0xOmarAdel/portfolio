@@ -9,9 +9,9 @@ import ProjectImage from "./ProjectImage";
 type Props = {
   inView: boolean;
   id: number;
-  webpSrc?: string;
-  pngSrc?: string;
-  imageHeight?: number;
+  webpSrc: string;
+  pngSrc: string;
+  imageHeight: number;
   title: string;
   description: string;
   tags: string[];
