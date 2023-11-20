@@ -12,7 +12,7 @@ const Hero = () => {
       <motion.video
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 3, delay: 0.3 }}
         autoPlay
         muted
         loop
