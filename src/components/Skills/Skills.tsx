@@ -2,7 +2,7 @@ import SingleSkill from "./SingleSkill";
 import { skills } from "../../data/skills";
 import Section from "../../ui/Section";
 import SectionHeading from "../../ui/SectionHeading";
-import {useInView} from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
   const { ref, inView } = useInView({
