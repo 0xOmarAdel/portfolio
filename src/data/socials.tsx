@@ -9,6 +9,6 @@ export const socials = [
   {
     title: "linkedIn",
     icon: FaLinkedinIn,
-    path: "https://www.linkedin.com/in/omaradel02",
+    path: "https://www.linkedin.com/in/omaradelawad",
   },
 ];
