@@ -120,6 +120,9 @@ export const projectsList = [
       "Yup",
       "Axios",
       "Redux Toolkit",
+      "Node JS",
+      "Express",
+      "Mongo DB",
     ],
   },
   {
