@@ -3,12 +3,14 @@ import shopNestPNG from "../assets/shopNest.png";
 import movieMazePNG from "../assets/movieMaze.png";
 import cmsPNG from "../assets/cms.png";
 import studySpherePNG from "../assets/studySphere.png";
+import dreamRestaurantPNG from "../assets/dreamRestaurantPNG.png";
 
 import socioAppWEBP from "../assets/socioApp.webp";
 import shopNestWEBP from "../assets/shopNest.webp";
 import movieMazeWEBP from "../assets/movieMaze.webp";
 import cmsWEBP from "../assets/cms.webp";
 import studySphereWEBP from "../assets/studySphere.webp";
+import dreamRestaurantWEBP from "../assets/dreamRestaurantPNG.webp";
 
 export const projectsList = [
   {
@@ -88,6 +90,40 @@ export const projectsList = [
   },
   {
     id: 4,
+    title: "Dream Restaurant",
+    description:
+      "An innovative and customer-centric restaurant website, designed to enhance the dining experience for both in-house and remote patrons. Our website offers a seamless ordering and delivery system, as well as a convenient table reservation feature.",
+    webpSrc: dreamRestaurantWEBP,
+    pngSrc: dreamRestaurantPNG,
+    imageHeight: 900,
+    link: "https://dream-restaurant.netlify.app",
+    github: "https://github.com/0xOmarAdel/dream",
+    collaborators: [
+      {
+        username: "MrGhost23",
+        image: "https://avatars.githubusercontent.com/u/72778139",
+      },
+      {
+        username: "noahwillson",
+        image: "https://avatars.githubusercontent.com/u/79482929",
+      },
+    ],
+    tags: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Tailwind",
+      "Daisy UI",
+      "Framer Motion",
+      "Formik",
+      "Yup",
+      "Axios",
+      "Redux Toolkit",
+    ],
+  },
+  {
+    id: 5,
     title: "Complaint Management System",
     description:
       "The Complaint Management System is a web-based application designed to help organizations efficiently handle and track customer complaints and feedback. This system streamlines the process of receiving, documenting, and resolving complaints, ensuring a better customer experience and improved service quality.",
@@ -117,7 +153,7 @@ export const projectsList = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Study Sphere",
     description:
       "Study Sphere is a platform designed for educational purposes. The app includes sections such as a hero banner, an about page, a teachers section, courses page, and a contact section using the emailjs library for email functionality.",
