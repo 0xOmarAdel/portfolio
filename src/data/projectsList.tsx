@@ -1,16 +1,16 @@
-import socioAppPNG from "../assets/socioApp.png";
-import shopNestPNG from "../assets/shopNest.png";
-import movieMazePNG from "../assets/movieMaze.png";
-import cmsPNG from "../assets/cms.png";
-import studySpherePNG from "../assets/studySphere.png";
-import dreamRestaurantPNG from "../assets/dreamRestaurantPNG.png";
-
 import socioAppWEBP from "../assets/socioApp.webp";
 import shopNestWEBP from "../assets/shopNest.webp";
 import movieMazeWEBP from "../assets/movieMaze.webp";
 import cmsWEBP from "../assets/cms.webp";
 import studySphereWEBP from "../assets/studySphere.webp";
 import dreamRestaurantWEBP from "../assets/dreamRestaurantPNG.webp";
+
+import socioAppPNG from "../assets/socioApp.png";
+import shopNestPNG from "../assets/shopNest.png";
+import movieMazePNG from "../assets/movieMaze.png";
+import cmsPNG from "../assets/cms.png";
+import studySpherePNG from "../assets/studySphere.png";
+import dreamRestaurantPNG from "../assets/dreamRestaurantPNG.png";
 
 export const projectsList = [
   {
