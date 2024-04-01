@@ -12,6 +12,11 @@ export const aboutTabs: Tab[] = [
   },
   {
     id: 2,
+    text: "Experience",
+    component: "AboutExperience",
+  },
+  {
+    id: 2,
     text: "Education",
     component: "AboutEducation",
   },
