@@ -12,3 +12,17 @@ export const education = {
   started: "Sep 2019",
   graduated: "Jun 2023",
 };
+
+export const experience = [
+  {
+    company: "Inframodern",
+    type: "Full-Time",
+    started: "Mar 2024",
+    current: true,
+    location: {
+      type: "Hybrid",
+      city: "Cairo",
+      country: "Egypt",
+    },
+  },
+];
