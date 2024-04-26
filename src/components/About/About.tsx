@@ -5,6 +5,7 @@ import AboutImage from "./AboutImage";
 import Section from "../../ui/Section";
 import SectionHeading from "../../ui/SectionHeading";
 const AboutOverview = lazy(() => import(`./AboutOverview`));
+const AboutExperience = lazy(() => import(`./AboutExperience`));
 const AboutEducation = lazy(() => import(`./AboutEducation`));
 const AboutGitHubStats = lazy(() => import(`./AboutGitHubStats`));
 
@@ -17,10 +18,10 @@ const About = () => {
       className="relative z-40 flex flex-col items-center justify-center gap-10"
     >
       <SectionHeading text="About" gradient="Me" />
-      <div className="w-full flex flex-col xl:flex-row justify-between gap-9 xl:gap-12">
-        <div className="order-2 xl:order-1 flex flex-col gap-6 xl:gap-8">
+      <div className="flex flex-col justify-between w-full xl:flex-row gap-9 xl:gap-12">
+        <div className="flex flex-col order-2 gap-6 xl:order-1 xl:gap-8">
           <nav>
-            <ul className="mr-[15px] flex flex-row justify-center xl:justify-start gap-8 text-xl sm:text-2xl text-gray-300 font-semibold">
+            <ul className="mr-[15px] flex flex-row flex-wrap justify-center xl:justify-start gap-x-8 gap-y-4 text-xl sm:text-2xl text-gray-300 font-semibold">
               {aboutTabs.map((navLink) => (
                 <li
                   key={navLink.id}
@@ -48,13 +49,15 @@ const About = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="grow-0 flex flex-col items-center xl:items-start"
+              className="flex flex-col items-center grow-0 xl:items-start"
             >
               <Suspense fallback={<div>Loading...</div>}>
                 {selectedTab.component === "AboutOverview" ? (
                   <AboutOverview />
                 ) : selectedTab.component === "AboutEducation" ? (
                   <AboutEducation />
+                ) : selectedTab.component === "AboutExperience" ? (
+                  <AboutExperience />
                 ) : (
                   <AboutGitHubStats />
                 )}
