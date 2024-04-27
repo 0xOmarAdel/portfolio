@@ -16,9 +16,10 @@ export const education = {
 export const experience = [
   {
     company: "Inframodern",
+    title: "Full Stack Web Developer",
     type: "Full-Time",
     started: "Mar 2024",
-    current: true,
+    left: "",
     location: {
       type: "Hybrid",
       city: "Cairo",
