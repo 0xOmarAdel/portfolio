@@ -45,7 +45,7 @@ const SingleSkill = ({ inView, icon: Icon, text, index }: Props) => {
         onHoverEnd={hoverEndHandler}
       >
         <div className="flip-card-front w-full h-full flex flex-row items-center justify-center border-[2px] border-violet-700 border-opacity-60 rounded-md text-4xl sm:text-5xl text-white">
-          {Icon}
+          <div className="w-1/2 h-1/2">{Icon}</div>
         </div>
         <div className="flip-card-back w-full h-full flex flex-row items-center justify-center bg-violet-700 rounded-md text-base sm:text-xl text-white">
           {text}
