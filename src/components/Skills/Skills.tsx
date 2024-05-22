@@ -26,7 +26,7 @@ const Skills = () => {
       >
         {skills.map((skill, index) => (
           <SingleSkill
-            key={skill.id}
+            key={skill.text}
             inView={inView}
             icon={skill.icon}
             text={skill.text}
