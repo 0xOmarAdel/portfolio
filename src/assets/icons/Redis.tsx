@@ -2,7 +2,6 @@ const Redis = () => {
   return (
     <svg
       fill="#f6f6f6"
-      fill="#f6f6f6"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
