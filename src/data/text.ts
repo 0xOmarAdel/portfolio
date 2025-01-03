@@ -1,10 +1,11 @@
 export const name = "omar adel";
 
 export const heroText =
-  "Experienced Front-End Web Developer specializing in React.js, adept with popular UI frameworks/libraries, committed to crafting dynamic and user-centric web experiences.";
+  "Full Stack Developer specializing in React.js, passionate about building scalable and user-focused web applications with dynamic and intuitive interfaces.";
 
 export const aboutText =
-  "Experienced front-end web developer skilled in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, TypeScript, React, and Redux Toolkit. Passionate about creating visually appealing, user-friendly websites. Strong problem-solving abilities and a keen eye for design. Constantly learning and staying up-to-date with the latest trends. Collaborative team player committed to delivering high-quality projects.";
+  "Proficient in front-end and back-end development. Adept at crafting pixel-perfect, user-centric websites and robust system architectures. Collaborative team player with strong problem-solving skills, dedicated to delivering high-quality, scalable solutions while staying updated with the latest technologies and trends.";
+
 
 export const education = {
   degree: "Bachelor's Degree in Computer Science & Statistics",
